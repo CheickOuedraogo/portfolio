@@ -15,7 +15,7 @@ export const Projects: FC = () => {
   const mounted = useHasMounted();
   const [active, setActive] = useState<Project | null>(null);
 
-  const pinned = mounted && !isMobile;
+  const pinned = mounted && !isMobile && MY_PROJECTS.length > 1;
 
   return (
     <section id="work" className="relative">

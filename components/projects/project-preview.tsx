@@ -102,7 +102,7 @@ export const ProjectPreview: FC<ProjectPreviewProps> = ({
                   <span className="relative h-1.5 w-1.5 rounded-full bg-mint" />
                 </span>
               )}
-              {project.image ? "Preview" : "Live Preview"}
+              {project.image ? "Aperçu" : "Aperçu direct"}
             </span>
             <span className={`${BADGE} text-white/70`}>
               {formatCounter(index, total)}
@@ -116,7 +116,7 @@ export const ProjectPreview: FC<ProjectPreviewProps> = ({
             style={{ transform: "translateZ(80px)" }}
             className="absolute bottom-5 right-5 inline-flex items-center gap-2 rounded-full border border-white/25 bg-black/50 px-4 py-2 text-xs text-white backdrop-blur-md hover:border-white/40"
           >
-            <span>Open Site</span>
+            <span>Ouvrir le site</span>
             <span aria-hidden>↗</span>
           </a>
 

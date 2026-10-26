@@ -54,9 +54,9 @@ export const ContactForm: FC = () => {
 
         <div className="relative mb-7 flex items-end justify-between gap-6">
           <div>
-            <p className="text-eyebrow">Place an order</p>
+            <p className="text-eyebrow">Demande de projet</p>
             <h3 className="mt-1 text-xl font-bold md:text-2xl">
-              Tell me about your project
+              Parlez-moi de votre projet
             </h3>
           </div>
           <div className="flex items-center gap-3">
@@ -79,7 +79,7 @@ export const ContactForm: FC = () => {
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
             <FloatingField
               id="name"
-              label="Your name"
+              label="Votre nom"
               value={formData.name}
               onChange={(value) => update("name", value)}
               required
@@ -87,7 +87,7 @@ export const ContactForm: FC = () => {
             />
             <FloatingField
               id="email"
-              label="Email"
+              label="Votre adresse email"
               type="email"
               value={formData.email}
               onChange={(value) => update("email", value)}
@@ -103,7 +103,7 @@ export const ContactForm: FC = () => {
 
           <FloatingField
             id="message"
-            label="What are you building?"
+            label="Que souhaitez-vous développer ?"
             value={formData.message}
             onChange={(value) => update("message", value)}
             required
@@ -134,11 +134,11 @@ export const ContactForm: FC = () => {
                 {isLoading ? (
                   <>
                     <span className="h-4 w-4 animate-spin rounded-full border-2 border-white/40 border-t-white" />
-                    Sending...
+                    Envoi en cours...
                   </>
                 ) : (
                   <>
-                    Send message
+                    Envoyer le message
                     <span aria-hidden>→</span>
                   </>
                 )}
@@ -147,7 +147,7 @@ export const ContactForm: FC = () => {
           </motion.button>
 
           <p className="text-center text-[11px] text-neutral-500">
-            By sending, you agree to be contacted at the email provided.
+            En envoyant ce message, vous acceptez d&apos;être contacté(e) à l&apos;adresse email indiquée.
           </p>
         </form>
       </motion.div>

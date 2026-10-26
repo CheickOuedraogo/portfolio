@@ -59,11 +59,11 @@ export const ProjectSummary: FC<ProjectSummaryProps> = ({
         rel="noopener noreferrer"
         className="btn-primary"
       >
-        <span>Visit Live</span>
+        <span>Voir le site</span>
         <span aria-hidden>↗</span>
       </a>
       <button type="button" onClick={onOpen} className="btn-ghost">
-        <span>Case study</span>
+        <span>Étude de cas</span>
       </button>
     </motion.div>
   </div>

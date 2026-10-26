@@ -1,19 +1,16 @@
 import { type Stat } from "@/types/portfolio-types";
 
-export const HERO_NAME = "Hasnain Irfan";
+export const HERO_NAME = "Ouedraogo Bonaventure Cheick Hamed";
 
-export const HERO_ROLE = "Senior Software Engineer";
+export const USERNAME = "CheickOuedraogo";
 
-export const HERO_LOCATION = "Karachi, Pakistan";
+export const HERO_ROLE = "Software Engineer";
+
+export const HERO_LOCATION = "Bobo-Dioulasso, Burkina Faso";
 
 export const HERO_TAGLINE =
-  "I architect scalable web & mobile products with React, Next.js and Node.js, turning complex ideas into shipped, revenue-ready software.";
+  "Diplômé en informatique et étudiant en Master Data Science, je conçois des solutions logicielles et explore l'intelligence artificielle et l'IoT pour répondre à des besoins concrets.";
 
-export const FLIP_WORDS = ["Scalable", "Modern", "Reliable"];
+export const FLIP_WORDS = ["Logiciel", "Data & IA", "Web & Mobile"];
 
-export const STATS: Stat[] = [
-  { value: "5+", label: "Years building products" },
-  { value: "20+", label: "Shipped projects" },
-  { value: "1k+", label: "End users served" },
-  { value: "40%", label: "Avg. productivity lift" },
-];
+export const STATS: Stat[] = [];

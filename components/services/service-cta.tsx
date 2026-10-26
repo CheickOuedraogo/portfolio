@@ -18,7 +18,7 @@ export const ServiceCta: FC = () => (
       </svg>
     </span>
     <span className="text-base font-medium tracking-tight md:text-lg">
-      Start this project
+      Lancer ce projet
     </span>
   </a>
 );

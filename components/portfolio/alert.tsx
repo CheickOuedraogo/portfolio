@@ -32,7 +32,7 @@ export const Alert: FC<AlertProps> = ({ type, text }) => {
             isDanger ? "bg-red-500" : "bg-lavender"
           } uppercase px-2 py-1 text-xs font-semibold mr-3`}
         >
-          {isDanger ? "Failed" : "Success"}
+          {isDanger ? "Échec" : "Succès"}
         </p>
         <p className="mr-2 text-left">{text}</p>
       </div>

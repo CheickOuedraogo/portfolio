@@ -5,14 +5,14 @@ import { padIndex } from "@/helpers/format-helpers";
 export const ProjectsHeader: FC<{ total: number }> = ({ total }) => (
   <div className="c-space pt-24 md:pt-32">
     <SectionHeader
-      eyebrow={`Selected Work · ${padIndex(total)}`}
+      eyebrow={`Projets Sélectionnés · ${padIndex(total)}`}
       title={
         <>
-          Projects that{" "}
-          <span className="text-gradient">shipped &amp; scaled.</span>
+          Des projets conçus,{" "}
+          <span className="text-gradient">déployés &amp; éprouvés.</span>
         </>
       }
-      hint={["Scroll", "Pinned"]}
+      hint={["Défiler", "Épinglé"]}
     />
   </div>
 );

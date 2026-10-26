@@ -41,11 +41,11 @@ export const Services: FC = () => {
         eyebrow={`Services · ${padIndex(SERVICES.length)}`}
         title={
           <>
-            What I can build for you,{" "}
-            <span className="text-gradient">end-to-end.</span>
+            Ce que je peux créer pour vous,{" "}
+            <span className="text-gradient">de bout en bout.</span>
           </>
         }
-        hint={["Scroll", "Stack"]}
+        hint={["Défiler", "Empiler"]}
       />
 
       <div className="relative space-y-6 md:space-y-8">

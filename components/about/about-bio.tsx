@@ -16,36 +16,34 @@ export const AboutBio: FC = () => {
       animate={inView ? "visible" : "hidden"}
       variants={fadeInUp}
       transition={{ duration: 0.7 }}
-      className="glass gradient-border p-8 md:p-10 lg:col-span-7"
+      className="glass gradient-border p-8 md:p-12 w-full max-w-4xl"
     >
       <p className="mb-3 text-sm uppercase tracking-[0.25em] text-neutral-400">
-        Who I Am
+        À propos de moi
       </p>
       <h3 className="mb-4 text-2xl font-bold md:text-3xl">
         {HERO_NAME} · {HERO_LOCATION}
       </h3>
-      <p className="text-base leading-relaxed text-neutral-300 md:text-lg">
-        I&apos;m a Senior Software Engineer with{" "}
-        <span className="font-semibold text-white">5+ years</span> of experience
-        designing and shipping production-grade web and mobile products. I lead
-        with clean code, sharp problem-solving and a deep care for the user
-        experience.
+      <p className="text-base leading-relaxed text-neutral-200 md:text-lg">
+        Diplômé en <span className="font-semibold text-white">Informatique</span> et actuellement en préparation d&apos;un <span className="font-semibold text-white">Master en Data Science</span>.
       </p>
-      <p className="mt-4 leading-relaxed text-neutral-400">
-        From <span className="text-white">Front-End Developer</span> to{" "}
-        <span className="text-white">Junior Team Lead</span>, and now{" "}
-        <span className="text-white">Senior Software Engineer at Getweys</span>,
-        I&apos;ve led teams, mentored developers, and contributed to architecture
-        decisions that kept codebases scalable and maintainable.
+      <p className="mt-4 leading-relaxed text-neutral-300">
+        Passionné par la conception de produits numériques utiles, l&apos;exploration de l&apos;intelligence artificielle et la manière dont la technologie peut résoudre des problématiques concrètes du quotidien. Mes centres d&apos;intérêt s&apos;étendent du <span className="text-white">développement logiciel</span> au <span className="text-white">machine learning</span> et à l&apos;<span className="text-white">Internet des Objets (IoT)</span>.
+      </p>
+      <p className="mt-4 leading-relaxed text-neutral-300">
+        J&apos;aime transformer les idées en projets opérationnels, expérimenter les nouvelles technologies et faire évoluer constamment mes compétences. Pour moi, le développement va bien au-delà de l&apos;écriture de code : il s&apos;agit de comprendre les enjeux en profondeur, de concevoir des solutions efficaces et d&apos;avoir un réel impact.
+      </p>
+      <p className="mt-4 leading-relaxed text-neutral-400 italic">
+        Toujours curieux d&apos;apprendre, de collaborer et de relever de nouveaux défis.
       </p>
 
       <div className="mt-8 flex flex-wrap gap-3">
         <a href="#contact" className="btn-primary">
-          <span>Start a project</span>
+          <span>Me contacter</span>
           <span aria-hidden>→</span>
         </a>
         <a href="#work" className="btn-ghost">
-          <span>See past work</span>
+          <span>Découvrir mes projets</span>
         </a>
       </div>
     </motion.div>

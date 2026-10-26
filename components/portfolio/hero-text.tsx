@@ -25,15 +25,15 @@ export const HeroText: FC = () => {
             <span className="relative rounded-full bg-mint h-2 w-2" />
           </span>
           <span className="text-xs tracking-[0.25em] uppercase text-neutral-300">
-            Available for new projects
+            Disponible pour de nouveaux projets
           </span>
         </div>
 
         <h1
-          className="reveal text-3xl font-light text-neutral-400"
+          className="reveal text-2xl lg:text-3xl font-light text-neutral-400"
           style={delay(0.12)}
         >
-          Hi, I&apos;m {HERO_NAME}
+          Bonjour, je suis <span className="font-semibold text-white">{HERO_NAME}</span>
         </h1>
 
         <p
@@ -41,7 +41,7 @@ export const HeroText: FC = () => {
           style={delay(0.19)}
         >
           {HERO_ROLE} <br />
-          crafting
+          créant des solutions
         </p>
 
         <div className="reveal" style={delay(0.26)}>
@@ -55,16 +55,16 @@ export const HeroText: FC = () => {
           className="reveal text-3xl lg:text-4xl font-semibold text-neutral-300"
           style={delay(0.33)}
         >
-          web & mobile products.
+          web &amp; mobiles.
         </p>
 
         <div className="reveal flex flex-wrap gap-4 mt-10" style={delay(0.4)}>
           <a href="#contact" className="btn-primary">
-            <span>Hire Me</span>
+            <span>Me contacter</span>
             <span aria-hidden>→</span>
           </a>
           <a href="#work" className="btn-ghost">
-            <span>View My Work</span>
+            <span>Voir mes projets</span>
           </a>
         </div>
       </div>
@@ -79,16 +79,23 @@ export const HeroText: FC = () => {
             <span className="relative rounded-full bg-mint h-2 w-2" />
           </span>
           <span className="text-[10px] tracking-[0.25em] uppercase text-neutral-300">
-            Open for Work
+            Disponible pour vos projets
           </span>
         </div>
 
         <p
-          className="reveal text-3xl font-light text-neutral-400"
+          className="reveal text-xl font-light text-neutral-400"
           style={delay(0.12)}
         >
-          Hi, I&apos;m {HERO_NAME.split(" ")[0]}
+          Bonjour, je suis
         </p>
+
+        <h1
+          className="reveal text-2xl font-bold text-white tracking-tight"
+          style={delay(0.15)}
+        >
+          {HERO_NAME}
+        </h1>
 
         <p
           className="reveal text-4xl font-bold text-gradient"
@@ -108,7 +115,7 @@ export const HeroText: FC = () => {
           className="reveal text-3xl font-semibold text-neutral-300"
           style={delay(0.33)}
         >
-          web & mobile apps.
+          applications web &amp; mobiles.
         </p>
 
         <div
@@ -116,11 +123,11 @@ export const HeroText: FC = () => {
           style={delay(0.4)}
         >
           <a href="#contact" className="btn-primary w-full">
-            <span>Hire Me</span>
+            <span>Me contacter</span>
             <span aria-hidden>→</span>
           </a>
           <a href="#work" className="btn-ghost w-full">
-            <span>View My Work</span>
+            <span>Voir mes projets</span>
           </a>
         </div>
       </div>

@@ -26,7 +26,7 @@ export const ProjectDetails: FC<ProjectDetailsProps> = ({
       >
         <button
           onClick={closeModal}
-          aria-label="Close"
+          aria-label="Fermer"
           className="absolute z-10 p-2 rounded-full top-4 right-4 bg-white/10 hover:bg-white/20 transition-colors"
         >
           <img src="/assets/close.svg" className="w-5 h-5" alt="" />
@@ -74,7 +74,7 @@ export const ProjectDetails: FC<ProjectDetailsProps> = ({
                 rel="noopener noreferrer"
                 className="btn-primary !py-2 !px-4 !text-sm"
               >
-                <span>Visit Live</span>
+                <span>Visiter le site</span>
                 <span aria-hidden>↗</span>
               </a>
             )}

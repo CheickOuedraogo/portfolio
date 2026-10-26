@@ -2,7 +2,7 @@ import { HERO_LOCATION, HERO_NAME, HERO_ROLE } from "./hero-constants";
 import { CONTACT_EMAIL, MY_SOCIALS } from "./social-constants";
 
 export const SITE_URL = (
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.hasnainirfan.com"
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://portfolio-seven-tau-f0hb8b802f.vercel.app"
 ).replace(/\/$/, "");
 
 export const absoluteUrl = (path: string) =>
@@ -13,14 +13,14 @@ export const SITE_NAME = `${HERO_NAME} | ${HERO_ROLE}`;
 export const SITE_TITLE = `${HERO_NAME} | ${HERO_ROLE}`;
 
 export const SITE_DESCRIPTION =
-  "Senior Software Engineer with 5+ years building scalable web and mobile products in React, Next.js and Node.js. Open to freelance and contract work.";
+  "Diplômé en Informatique et étudiant en Master Data Science, passionné par le développement de produits utiles, l'IA et l'IoT.";
 
 export const SITE_TAGLINE =
-  "Scalable web & mobile products built with React, Next.js and Node.js.";
+  "Software Engineer · Développeur Web, Mobile (Flutter), APIs (FastAPI, Laravel) & Data Science.";
 
 export const OG_IMAGE = "/og.jpg";
-export const OG_IMAGE_ALT = `${HERO_NAME}, ${HERO_ROLE} portfolio`;
-export const OG_LOCALE = "en_US";
+export const OG_IMAGE_ALT = `Portfolio de ${HERO_NAME}, ${HERO_ROLE}`;
+export const OG_LOCALE = "fr_FR";
 
 export const OG_IMAGES = [
   {
@@ -37,68 +37,64 @@ export const GOOGLE_SITE_VERIFICATION =
 export const SITE_KEYWORDS = [
   HERO_NAME,
   "Software Engineer",
-  "Senior Software Engineer",
-  "Full Stack Developer",
-  "Next.js Developer",
-  "React Developer",
-  "React Native Developer",
-  "Node.js Developer",
-  "Frontend Developer",
-  "Web Developer Portfolio",
-  "Freelance Developer",
-  "Hire Software Engineer",
+  "Ingénieur Logiciel",
+  "Data Science",
+  "Intelligence Artificielle",
+  "Machine Learning",
+  "IoT",
+  "Flutter",
+  "FastAPI",
+  "Laravel",
+  "TypeScript",
+  "Next.js",
+  "React",
+  "Python",
   HERO_LOCATION,
-  "Pakistan",
-  "Remote Developer",
+  "Burkina Faso",
 ];
 
-export const HOME_TITLE = `${HERO_NAME} | ${HERO_ROLE} & Next.js Developer`;
+export const HOME_TITLE = `${HERO_NAME} | ${HERO_ROLE}`;
 
 export const HOME_DESCRIPTION =
-  "Senior Software Engineer in Karachi building scalable web, mobile and API products with React, Next.js and Node.js. Open to freelance and contract work.";
+  "Portfolio de Cheick Hamed Bonaventure Ouedraogo, Software Engineer au Burkina Faso. Solutions logicielles, Flutter, FastAPI, Laravel et Data Science.";
 
-export const ADMIN_TITLE = "Contact submissions";
+export const ADMIN_TITLE = "Messages de contact";
 
 export const ADMIN_DESCRIPTION =
-  "Private dashboard for contact form submissions. Not part of the public site.";
+  "Tableau de bord privé pour les messages reçus via le formulaire.";
 
-export const ADMIN_LOGIN_TITLE = "Sign in";
+export const ADMIN_LOGIN_TITLE = "Connexion";
 
 export const ADMIN_LOGIN_DESCRIPTION =
-  "Sign in to the private contact submissions dashboard.";
+  "Connexion à l'espace d'administration.";
 
 export const SITE_SECTIONS = [
   {
-    name: "Home",
+    name: "Accueil",
     hash: "#home",
-    description: `${HERO_NAME}, ${HERO_ROLE} building scalable web and mobile products.`,
+    description: `${HERO_NAME}, ${HERO_ROLE} concevant des produits web et mobiles évolutifs.`,
   },
   {
-    name: "About",
+    name: "À propos",
     hash: "#about",
-    description: `Background, stack and working style of ${HERO_NAME}, a ${HERO_ROLE} based in ${HERO_LOCATION}.`,
+    description: `Parcours, compétences et façon de travailler de ${HERO_NAME}, ${HERO_ROLE} basé à ${HERO_LOCATION}.`,
   },
   {
     name: "Services",
     hash: "#services",
     description:
-      "Web applications, cross-platform mobile apps, APIs and technical consulting for startups and product teams.",
+      "Applications web, applications mobiles multiplateformes, APIs et accompagnement technique.",
   },
   {
-    name: "Work",
+    name: "Projets",
     hash: "#work",
     description:
-      "Selected projects and case studies built with React, Next.js, React Native and Node.js.",
-  },
-  {
-    name: "Testimonials",
-    hash: "#testimonials",
-    description: `What clients and teammates say about working with ${HERO_NAME}.`,
+      "Sélection de projets et réalisations numériques.",
   },
   {
     name: "Contact",
     hash: "#contact",
-    description: `Get in touch with ${HERO_NAME} about freelance, contract or full-time work.`,
+    description: `Contactez ${HERO_NAME} pour vos projets web, mobile ou missions freelance.`,
   },
 ] as const;
 

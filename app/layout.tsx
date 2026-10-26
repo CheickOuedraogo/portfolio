@@ -85,7 +85,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="fr"
       className={`${funnelDisplay.variable} h-full antialiased`}
       suppressHydrationWarning
     >

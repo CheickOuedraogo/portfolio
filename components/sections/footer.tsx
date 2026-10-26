@@ -6,6 +6,7 @@ import {
   CONTACT_EMAIL,
   HERO_NAME,
   MY_SOCIALS,
+  USERNAME,
 } from "@/constants/portfolio-constants";
 
 export const Footer: FC = () => {
@@ -33,14 +34,16 @@ export const Footer: FC = () => {
         className="mt-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-8"
       >
         <div>
-          <div className="flex items-center gap-2 text-base font-semibold tracking-tight text-white">
-            <span className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-royal to-coral text-white text-sm font-black">
-              H
+          <div className="flex flex-col text-white">
+            <span className="text-xl font-bold tracking-tight text-gradient">
+              {USERNAME}
             </span>
-            <span>{HERO_NAME}</span>
+            <span className="text-xs text-neutral-400 mt-1">
+              {HERO_NAME}
+            </span>
           </div>
           <p className="mt-3 text-sm text-neutral-400 max-w-sm">
-            Building scalable web & mobile products with care. Reach out at{" "}
+            Conception soignée de produits web &amp; mobiles performants. Contactez-moi à{" "}
             <a
               href={`mailto:${CONTACT_EMAIL}`}
               className="text-white hover:text-coral transition-colors"
@@ -73,7 +76,7 @@ export const Footer: FC = () => {
               © {new Date().getFullYear()} {HERO_NAME}
             </span>
             <span>·</span>
-            <span>All rights reserved.</span>
+            <span>Tous droits réservés.</span>
           </div>
         </div>
       </motion.div>
@@ -82,9 +85,9 @@ export const Footer: FC = () => {
         initial={{ opacity: 0 }}
         animate={inView ? { opacity: 1 } : {}}
         transition={{ duration: 0.8, delay: 0.5 }}
-        className="mt-16 text-center text-[20vw] md:text-[14rem] font-black leading-none text-white/[0.03] select-none"
+        className="mt-16 text-center text-[18vw] md:text-[13rem] font-black leading-none text-white/[0.03] select-none tracking-wider"
       >
-        HASNAIN
+        OUEDRAOGO
       </motion.p>
     </footer>
   );

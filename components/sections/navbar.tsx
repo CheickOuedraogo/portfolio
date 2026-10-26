@@ -49,7 +49,7 @@ export const Navbar: FC = () => {
             type="button"
             onClick={() => setIsOpen((open) => !open)}
             className="flex cursor-pointer text-neutral-300 hover:text-white sm:hidden"
-            aria-label="Toggle menu"
+            aria-label="Ouvrir le menu"
             aria-expanded={isOpen}
           >
             <img

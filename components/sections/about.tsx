@@ -3,10 +3,8 @@
 import { useRef, type FC } from "react";
 import { motion, useScroll, useTransform } from "motion/react";
 import { AboutBio } from "@/components/about/about-bio";
-import { AboutStatCard } from "@/components/about/about-stat-card";
 import { SkillsMarquee } from "@/components/about/skills-marquee";
 import { SectionHeader } from "@/components/ui/section-header";
-import { STATS } from "@/constants/hero-constants";
 
 export const About: FC = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -37,22 +35,17 @@ export const About: FC = () => {
       </motion.div>
 
       <SectionHeader
-        eyebrow="About"
+        eyebrow="À propos"
         title={
           <>
-            Engineering products that{" "}
-            <span className="text-gradient">people actually use.</span>
+            Concevoir des produits que{" "}
+            <span className="text-gradient">les gens utilisent vraiment.</span>
           </>
         }
       />
 
-      <div className="mt-12 grid grid-cols-1 items-start gap-6 lg:grid-cols-12">
+      <div className="mt-12 flex justify-center">
         <AboutBio />
-        <div className="grid grid-cols-2 gap-4 lg:col-span-5">
-          {STATS.map((stat, index) => (
-            <AboutStatCard key={stat.label} {...stat} index={index} />
-          ))}
-        </div>
       </div>
 
       <SkillsMarquee />
